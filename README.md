@@ -1,4 +1,4 @@
-# 🚀 FastAPI SageMaker Integration
+# FastAPI SageMaker Integration
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![AWS SageMaker](https://img.shields.io/badge/AWS%20SageMaker-ML%20Hosting-FF9900?style=for-the-badge&logo=amazon-aws)](https://aws.amazon.com/sagemaker/)
