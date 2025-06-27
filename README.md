@@ -69,8 +69,8 @@ HF_MODEL_ID=distilbert-base-uncased-distilled-squad
 HF_TASK=question-answering
 
 # SageMaker Session Details
-SAGEMAKER_BUCKET=sagemaker-eu-north-1-740269538003
-SAGEMAKER_ROLE_ARN=arn:aws:iam::740269538003:role/sagemaker-full-access-role
+SAGEMAKER_BUCKET=your-sagemaker-bucket
+SAGEMAKER_ROLE_ARN=your-sagemaker-execution-role
 ```
 
 ### 3. AWS Configuration
