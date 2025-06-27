@@ -41,7 +41,7 @@ FastAPI SageMaker Integration is a production-ready solution that bridges the ga
 - **📊 Batch Processing**: Support for both single and batch predictions
 - **🛡️ Robust Error Handling**: Comprehensive error management and logging
 
-## 🚀 Features
+## Features
 
 ### Core Capabilities
 
