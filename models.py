@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator, ConfigDict
 from typing import Any, Dict, List, Optional, Union
 import uuid
 from datetime import datetime
@@ -23,7 +23,8 @@ class PredictionRequest(BaseModel):
         description="Additional metadata for the request"
     )
     
-    @validator('data')
+    @field_validator('data')
+    @classmethod
     def validate_data(cls, v):
         """Validate input data format"""
         if isinstance(v, dict):
@@ -73,7 +74,7 @@ class PredictionResponse(BaseModel):
 
 class ModelInfo(BaseModel):
     """Model information response"""
-    model_config = {"protected_namespaces": ()}
+    model_config = ConfigDict(protected_namespaces=())
     
     model_name: str = Field(..., description="Name of the deployed model")
     model_type: str = Field(..., description="Type of the model (e.g., Hugging Face Question-Answering)")
